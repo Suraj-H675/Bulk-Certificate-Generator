@@ -136,7 +136,7 @@ Sequential processing is preferable here to premature parallel writes against SQ
 
 ### PDF generation and local storage
 
-ReportLab renders one predefined landscape A4 certificate design using built-in fonts. Long recipient names shrink within a bounded range rather than determining filenames or filesystem paths.
+ReportLab renders one predefined landscape A4 certificate design using built-in fonts. Long certificate text shrinks and wraps within bounded layout regions rather than overflowing the page or determining filenames/filesystem paths.
 
 Artifacts are stored under generated job/certificate UUIDs and written through a temporary file plus atomic replace. The database stores a relative artifact key, not PDF blobs or user-provided paths.
 
